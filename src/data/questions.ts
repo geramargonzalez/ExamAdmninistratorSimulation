@@ -10,7 +10,7 @@ export const questions: Question[] = [
       "To track user login activities and generate reports",
       "To automatically assign users to different subsidiaries"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Role-Based Access Control (RBAC) in NetSuite is designed to control user access to data and functionality based on their assigned roles, ensuring users only see and can modify information relevant to their job responsibilities.",
     category: "User Management",
     difficulty: "Medium"
@@ -840,5 +840,355 @@ export const questions: Question[] = [
     explanation: "NetSuite allows up to 7 custom segments to be added to the Chart of Accounts, providing flexibility for complex financial reporting and analysis requirements.",
     category: "Financial Management",
     difficulty: "Hard"
+  },
+  {
+    id: 61,
+    question: "Where should an Administrator add the Type field in a Transaction Saved Search to limit search results to a specific transaction type?",
+    options: [
+      "Criteria Tab",
+      "Results Tab",
+      "Highlighting Tab",
+      "Role Tab"
+    ],
+    correctAnswer: 0,
+    explanation: "To limit search results by a specific transaction type, the Administrator should use the Criteria Tab to filter the results accordingly.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 62,
+    question: "Which search type shows the number of orders from a Vendor that are late or not received?",
+    options: [
+      "Order Search",
+      "Transaction Search",
+      "Account Search",
+      "Shipping Item Search"
+    ],
+    correctAnswer: 1,
+    explanation: "Transaction Search provides comprehensive visibility into transactions, including those from vendors that are overdue or pending.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 63,
+    question: "What Saved Search type should an Administrator use to determine the total lifetime sales for both parent and child customers?",
+    options: [
+      "Transaction",
+      "Company",
+      "Document",
+      "Parent"
+    ],
+    correctAnswer: 1,
+    explanation: "Transaction searches aggregate data from both parent and child records, making them suitable for lifetime sales calculations.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 64,
+    question: "How are users added to receive alerts sent by a Saved Search?",
+    options: [
+      "From the Audience tab of the Saved Search, add the user in the Employees field.",
+      "From the Audience tab of the Saved Search, add the user's team in the Groups field.",
+      "From the Email tab of the Saved Search, click Specific Recipients, and add the user in the Recipient field.",
+      "From the Email tab of the Saved Search, click Customize Message and add the user in the From field."
+    ],
+    correctAnswer: 2,
+    explanation: "To notify users via Saved Search alerts, you must specify them under Specific Recipients in the Email tab.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 65,
+    question: "An Administrator wishes to give users with the Sales Person role permission to edit a Sales Order Saved Search. How is this done?",
+    options: [
+      "Set the Search to Public. Then, under the Roles tab, select Form for the Sales Person role.",
+      "Set the Search to Public. Then, under the Roles tab, select all options for Sales Person role.",
+      "From the Audience Tab of the Saved Search, select Allow Audience To Edit and select Sales Person under Roles.",
+      "From the Audience Tab of the Saved Search, select Sales Person under Roles and select the users under Employees."
+    ],
+    correctAnswer: 2,
+    explanation: "Allowing users to edit a Saved Search requires using 'Allow Audience To Edit' under the Audience tab.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 66,
+    question: "How can an Administrator view changes made to a Saved Search?",
+    options: [
+      "Access the Execution Log tab.",
+      "Access the Audience tab.",
+      "Access the Results tab.",
+      "Access the Audit Trail tab."
+    ],
+    correctAnswer: 3,
+    explanation: "Changes to a Saved Search are tracked in the Audit Trail tab, where edit history is recorded.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 67,
+    question: "Which Mode option allows users to remove portlets added as part of a published dashboard?",
+    options: [
+      "Locked",
+      "Unlocked",
+      "Restrict Content",
+      "Add/Move"
+    ],
+    correctAnswer: 1,
+    explanation: "Unlocked mode allows users to make changes such as removing portlets from a published dashboard.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 68,
+    question: "Which portlet allows for multiple Key Performance Indicators (KPIs) to display at once?",
+    options: [
+      "Trend Graph",
+      "Report Snapshots",
+      "KPI Meter",
+      "Custom Portlet"
+    ],
+    correctAnswer: 0,
+    explanation: "Trend Graphs are capable of displaying multiple KPIs together for comparative insights.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 69,
+    question: "What is the maximum number of criteria that can be added to a single saved search?",
+    options: [
+      "50",
+      "100",
+      "200",
+      "Unlimited"
+    ],
+    correctAnswer: 2,
+    explanation: "NetSuite allows up to 200 criteria in a single saved search to maintain system performance.",
+    category: "SuiteAnalytics",
+    difficulty: "Medium"
+  },
+  {
+    id: 70,
+    question: "Which role has the ability to create and edit custom fields by default?",
+    options: [
+      "Administrator",
+      "Customization Manager",
+      "Full Access",
+      "Both A and B"
+    ],
+    correctAnswer: 3,
+    explanation: "Both Administrator and Customization Manager roles have permissions to create and edit custom fields.",
+    category: "Customization",
+    difficulty: "Easy"
+  },
+  {
+    id: 71,
+    question: "What is the character limit for custom field IDs?",
+    options: [
+      "20 characters",
+      "30 characters",
+      "40 characters",
+      "50 characters"
+    ],
+    correctAnswer: 1,
+    explanation: "Custom field IDs in NetSuite are limited to 30 characters and must be unique within the account.",
+    category: "Customization",
+    difficulty: "Medium"
+  },
+  {
+    id: 72,
+    question: "Which of the following is NOT a valid custom field type?",
+    options: [
+      "Free-Form Text",
+      "List/Record",
+      "Multiple Select",
+      "Auto-Increment"
+    ],
+    correctAnswer: 3,
+    explanation: "Auto-Increment is not a standard custom field type in NetSuite. NetSuite uses internal IDs for auto-incrementing.",
+    category: "Customization",
+    difficulty: "Medium"
+  },
+  {
+    id: 73,
+    question: "What happens when you delete a custom field that is referenced in saved searches?",
+    options: [
+      "The saved searches are automatically updated",
+      "NetSuite prevents the deletion",
+      "The saved searches will show errors",
+      "The field is marked as inactive"
+    ],
+    correctAnswer: 2,
+    explanation: "When a custom field used in saved searches is deleted, those searches will display errors until updated.",
+    category: "Customization",
+    difficulty: "Hard"
+  },
+  {
+    id: 74,
+    question: "Which permission allows a user to view the Setup menu?",
+    options: [
+      "Lists → Setup",
+      "Setup → View Setup Menu",
+      "Custom → Setup Access",
+      "Reports → Setup"
+    ],
+    correctAnswer: 1,
+    explanation: "The 'Setup → View Setup Menu' permission controls access to the Setup menu in NetSuite.",
+    category: "User Management",
+    difficulty: "Medium"
+  },
+  {
+    id: 75,
+    question: "What is the recommended approach for testing customizations before deploying to production?",
+    options: [
+      "Test directly in production during off-hours",
+      "Use a sandbox account",
+      "Test with a limited group of users",
+      "Use the Preview mode"
+    ],
+    correctAnswer: 1,
+    explanation: "Using a sandbox account is the recommended best practice for testing customizations before production deployment.",
+    category: "Best Practices",
+    difficulty: "Easy"
+  },
+  {
+    id: 76,
+    question: "Which of the following can trigger a workflow?",
+    options: [
+      "Record creation",
+      "Record edit",
+      "Time-based conditions",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "NetSuite workflows can be triggered by record creation, editing, and time-based conditions.",
+    category: "Automation",
+    difficulty: "Medium"
+  },
+  {
+    id: 77,
+    question: "What is the maximum number of workflow states allowed in a single workflow?",
+    options: [
+      "50",
+      "100",
+      "200",
+      "Unlimited"
+    ],
+    correctAnswer: 2,
+    explanation: "NetSuite allows up to 200 workflow states in a single workflow definition.",
+    category: "Automation",
+    difficulty: "Medium"
+  },
+  {
+    id: 78,
+    question: "Which scripting API is used for client-side validation in NetSuite?",
+    options: [
+      "N/record",
+      "N/search",
+      "N/ui/dialog",
+      "N/currentRecord"
+    ],
+    correctAnswer: 3,
+    explanation: "The N/currentRecord API is primarily used for client-side validation and field interactions.",
+    category: "SuiteScript",
+    difficulty: "Hard"
+  },
+  {
+    id: 79,
+    question: "What is the governance limit for User Event scripts?",
+    options: [
+      "1,000 units",
+      "5,000 units",
+      "10,000 units",
+      "No limit"
+    ],
+    correctAnswer: 2,
+    explanation: "User Event scripts have a governance limit of 10,000 units per execution.",
+    category: "SuiteScript",
+    difficulty: "Hard"
+  },
+  {
+    id: 80,
+    question: "Which deployment model allows SuiteScript to run in real-time with user interactions?",
+    options: [
+      "Scheduled Script",
+      "Map/Reduce Script",
+      "Client Script",
+      "Restlet"
+    ],
+    correctAnswer: 2,
+    explanation: "Client Scripts run in real-time within the user's browser and respond to user interactions immediately.",
+    category: "SuiteScript",
+    difficulty: "Medium"
+  },
+  {
+    id: 81,
+    question: "What is required to enable SuiteAnalytics Connect?",
+    options: [
+      "Additional licensing",
+      "Administrator role only",
+      "Third-party integration",
+      "Custom development"
+    ],
+    correctAnswer: 0,
+    "explanation": "SuiteAnalytics Connect requires additional licensing beyond the standard NetSuite subscription.",
+    "category": "SuiteAnalytics",
+    "difficulty": "Medium"
+  },
+  {
+    id: 82,
+    question: "Which record type cannot be used as the basis for a saved search?",
+    options: [
+      "Custom Records",
+      "System Notes",
+      "Activities",
+      "All record types can be searched"
+    ],
+    correctAnswer: 3,
+    explanation: "All record types in NetSuite, including custom records and system notes, can be used as the basis for saved searches.",
+    category: "SuiteAnalytics",
+    difficulty: "Easy"
+  },
+  {
+    id: 83,
+    question: "What happens when you exceed the concurrent user limit in your NetSuite account?",
+    options: [
+      "Additional users are automatically billed",
+      "New login attempts are blocked",
+      "System performance degrades",
+      "Users are logged out randomly"
+    ],
+    correctAnswer: 1,
+    explanation: "When concurrent user limits are exceeded, NetSuite blocks new login attempts until existing users log out.",
+    category: "User Management",
+    difficulty: "Medium"
+  },
+  {
+    id: 84,
+    question: "Which feature allows you to track changes made to critical records?",
+    options: [
+      "System Notes",
+      "Audit Trail",
+      "Change Log",
+      "Version Control"
+    ],
+    correctAnswer: 0,
+    explanation: "System Notes in NetSuite automatically track changes made to records, providing an audit trail.",
+    category: "Data Management",
+    difficulty: "Easy"
+  },
+  {
+    id: 85,
+    question: "What is the recommended frequency for backing up NetSuite customizations?",
+    options: [
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Before each release"
+    ],
+    correctAnswer: 3,
+    explanation: "It's recommended to back up NetSuite customizations before each release to ensure recovery capability.",
+    category: "Best Practices",
+    difficulty: "Medium"
   }
 ];
